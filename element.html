@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -29,8 +29,30 @@
 		p {
 			text-align: justify;
 		}
-	
-	
+		
+		.line-lost li{
+			list-style: none;		
+		}
+		
+		.line-number li {
+			list-style-type: decimal;
+		}
+		
+		.line-icon li {
+			list-style: none;
+			display: inline;
+		}
+		
+		.line-icon .fa {
+			font-size: 25px;
+			margin: 2px;
+			padding: 4px 6px;
+			border: 3px double #999;
+			border-radius: 50%;
+			width: 40px;
+			text-align: center;
+			text-decoration: none;
+		}
 	</style>
 </head>
 <body>
@@ -41,13 +63,13 @@
 		<div class="row">
 			<div class="col-sm-12 text-center">
 				<h3 class="h3 text-info font-weight-bold">Lorem Ipsum</h3>
-				<p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				<p class="text-muted font-weight-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-sm-12">
 				<h3 class="h3 text-info font-weight-bold">Lorem Ipsum</h3>
-				<p class="card-text text-muted">
+				<p class="card-text text-muted font-weight-light">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -59,7 +81,7 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<h3 class="h3 text-info font-weight-bold">Lorem Ipsum</h3>
-				<p class="card-text text-muted">
+				<p class="card-text text-muted font-weight-light">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -69,7 +91,7 @@
 			</div>
 			<div class="col-sm-6">
 				<h3 class="h3 text-info font-weight-bold" >Lorem Ipsum</h3>
-				<p class="card-text text-muted">
+				<p class="card-text text-muted font-weight-light">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -81,21 +103,21 @@
 		<div class="row">
 			<div class="col-sm-4">
 				<h3 class="h3 text-info font-weight-bold">Lorem Ipsum</h3>
-				<p class="card-text text-muted">
+				<p class="card-text text-muted font-weight-light">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 			</div>
 			<div class="col-sm-4">
 				<h3 class="h3 text-info font-weight-bold">Lorem Ipsum</h3>
-				<p class="card-text text-muted">
+				<p class="card-text text-muted font-weight-light">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 			</div>
 			<div class="col-sm-4">
 				<h3 class="h3 text-info font-weight-bold">Lorem Ipsum</h3>
-				<p class="card-text text-muted">
+				<p class="card-text text-muted font-weight-light">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
 					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 					 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
@@ -114,10 +136,10 @@
  <div class="container">
 	<h3 class="h3 card-title text-info font-weight-bold">Lorem Ipsum</h3>
 	<h4 class="h4 card-subtitle text-info font-weight-bold">Lorem Ipsum</h4>
-	<p class="card-text text-muted">
+	<p class="card-text text-muted font-weight-light">
 		Lorem <span class="font-weight-bold">ipsum</span> dolor sit <span class="font-weight-bolder">amet</span>, <span class="font-italic">consectetur</span> adipiscing elit, 
 		sed do <span class="font-weight-light">eiusmod</span> tempor <span class="text-capitalize">incididnt</span> ut labore <sup>et dolore</sup> magna <sub>aliqua</sub>.
-		<small>Ut enim ad minim</small> veniam, quis <s>nostrud</s> exercitation <u>ullamco laboris</u> nisi ut aliquip ex ea <span class="text-nowrap bg-secondary text-monospace text-light"style="display: inline-block;">commodo consequat</span>.
+		<small>Ut enim ad minim</small><span class="font-weight-normal"> veniam, quis</span> <s>nostrud</s> exercitation <u>ullamco laboris</u> nisi ut <code>aliquip</code> ex ea <span class="text-nowrap bg-secondary text-monospace text-light"style="display: inline-block;">commodo consequat</span>.
 	</p>
 </div>
  </div>
@@ -144,5 +166,108 @@
 
 
 <!--------------		content 4		------------>
+<section>
+	<div class="card">
+		<div class="container">
+			<h3 class="h3 font-weight-bold text-info">Lorem ipsum dolor sit amet</h3>
+			<h4 class="text-muted font-weight-light">Lorem ipsum dolor sit amet</h4>
+			<p class="h5 card-text font-weight-light">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+			</p>
+		</div>
+	</div>
+	<div class="card">
+		<div class="container">
+			<h4 class="h4 font-weight-bold text-info">Lorem ipsum dolor sit amet</h4>
+			<h5 class="text-muted font-weight-light">Lorem ipsum dolor sit amet</h5>
+			<p class="h5 card-text font-weight-light">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+			</p>
+		</div>
+	</div>
+	<div class="card">
+		<div class="container">
+			<h5 class="h5 font-weight-bold text-info">Lorem ipsum dolor sit amet</h5>
+			<h5 class="text-muted font-weight-light">Lorem ipsum dolor sit amet</h6>
+			<p class="h6 card-text font-weight-light">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+				Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		
+			</p>
+		</div>
+	</div>
+</section>
+
+<hr width="70%">
+
+
+<!----------------		Content 5	-------------->
+
+<section>
+	<div class="card" style="text-center">
+		<div class="row">
+			<div class="col-sm-6">
+				<h3 class="h3 text-info font-weight-bold">Lorem Ipsum</h3>
+				<h5 class="h5 text-info">List Bullet</h5>
+				<ul class="text-muted font-weight-light">
+					<li>Lorem ipsum dolor sit ame</li>
+					<li>Lorem ipsum dolor sit ame</li>
+					<li>Lorem ipsum dolor sit ame</li>
+				</ul>
+			</div>
+			<div class="col-sm-6">
+					<h5 class="h5 text-info">Number</h5>
+						<ul class="line-number text-muted font-weight-light">
+							<li>Lorem ipsum dolor sit ame</li>
+							<li>Lorem ipsum dolor sit ame</li>
+							<li>Lorem ipsum dolor sit ame</li>
+							<li>Lorem ipsum dolor sit ame</li>
+							<li>Lorem ipsum dolor sit ame</li>
+							<li>Lorem ipsum dolor sit ame</li>
+						</ul>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6">
+				<h5 class="h5 text-info">Line</h5>
+					<ul class="line-lost text-muted font-weight-light">
+						<li>Lorem ipsum dolor sit ame</li>
+						<hr>
+						<li>Lorem ipsum dolor sit ame</li>
+						<hr>
+						<li>Lorem ipsum dolor sit ame</li>
+						<hr>
+					</ul>
+			</div>
+			<div class="col-sm-6">
+				<h5 class=" h5 text-info">Icon</h5>
+				<ul class="line-icon text-muted font-weight-light">
+					<li><i class="fa fa-facebook"></i><li>
+					<li><i class="fa fa-twitter"></i><li>
+					<li><i class="fa fa-skype"></i><li>
+					<li><i class="fa fa-instagram"></i><li>
+					<li><i class="fa fa-linkedin"></i><li>
+					<li><i class="fa fa-git"></i><li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</section>
+
+<hr width="70%">
+
+
+
+
 </body>
 </html>
